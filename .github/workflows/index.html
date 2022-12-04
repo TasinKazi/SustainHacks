@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id='toggle' class="pyro hidden">
+        <div class="before"></div>
+        <div class="after"></div>
+      </div>
+	<div id='toggle' class='container'>
+
+		<h1>How sustainable is your lifestyle?</h1>
+
+		<form id="form" onsubmit="return false">
+
+			<div class='list active'>
+				<p class="quests">
+					How many hours do you use electronical device?
+				</p>
+				<ul>
+					<li><input type="radio" name="device" id="device1" value="0" /> <label></label>0-2 hours</li>
+					<li><input type="radio" name="device" id="device2" value="-3" /> 2-4 hours</li>
+					<li><input type="radio" name="device" id="device3" value="-5" /> 4-6 hours</li>
+					<li><input type="radio" name="device" id="device4" value="-10" /> 6+ hours</li>
+				</ul>
+			</div>
+
+
+			<div class='list hidden'>
+				<p class="quests">
+					Do you recycle your products regularly?
+				</p>
+				<ul>
+					<li><input type="radio" name="recycle" value="0" />Always</li>
+					<li><input type="radio" name="recycle" value="-5" /> Often</li>
+					<li><input type="radio" name="recycle" value="-10" /> Sometimes</li>
+					<li><input type="radio" name="recycle" value="-15" /> Rarely</li>
+					<li><input type="radio" name="recycle" value="-20" /> Never</li>
+				</ul>
+			</div>
+
+
+			<div class='list hidden'>
+				<p class="quests">
+					Do you upscale or reuse your products regularly?
+				</p>
+				<ul>
+					<li><input type="radio" name="upcycle" value="0" />Always</li>
+					<li><input type="radio" name="upcycle" value="-3" /> Often</li>
+					<li><input type="radio" name="upcycle" value="-5" /> Sometimes</li>
+					<li><input type="radio" name="upcycle" value="-8" /> Rarely</li>
+					<li><input type="radio" name="upcycle" value="-10" /> Never</li>
+				</ul>
+			</div>
+
+
+			<div class='list hidden'>
+				<p class="quests">
+					Do you use any environmental friendly products?
+				</p>
+				<ul>
+					<li><input type="radio" name="friendly" value="0" />Always</li>
+					<li><input type="radio" name="friendly" value="-3" /> Often</li>
+					<li><input type="radio" name="friendly" value="-5" /> Sometimes</li>
+					<li><input type="radio" name="friendly" value="-10" /> Rarely</li>
+					<li><input type="radio" name="friendly" value="-15" /> Never</li>
+				</ul>
+			</div>
+
+			<div class='list hidden'>
+				<p class="quests">
+					How long do you take showers?
+				</p>
+				<ul>
+					<li><input type="radio" name="shower" value="0" />Less than 5 minutes</li>
+					<li><input type="radio" name="shower" value="-3" />5 - 10 minutes</li>
+					<li><input type="radio" name="shower" value="-5" />10 - 15 minutes</li>
+					<li><input type="radio" name="shower" value="-10" />15 - 20 minutes</li>
+					<li><input type="radio" name="shower" value="-25" />More than 20 minutes</li>
+				</ul>
+			</div>
+
+			<div class='list hidden'>
+				<p class="quests">
+					How often do you take showers & baths?
+				</p>
+				<ul>
+					<li><input type="radio" name="baths" value="0" />Three times a week</li>
+					<li><input type="radio" name="baths" value="-3" />Four times a week</li>
+					<li><input type="radio" name="baths" value="-5" />Five times a week</li>
+					<li><input type="radio" name="baths" value="-10" />Six times a week</li>
+					<li><input type="radio" name="baths" value="-20" />Seven times a week</li>
+				</ul>
+			</div>
+
+	<button type='submit' id="sub" class='hidden btn' onclick="scoreFunction()">Check Score</button>
+	<div class='score hiddenScore'>
+    <p id="finalScore"> You scored: </p>
+
+	
+	</div>
+<div class='info'>
+	<p class='hidden x'>You have scored below 25, you should work toward increasing your score by following the guidelines we have provided in the Learning Center.</p>
+		
+	<p class='hidden x'>You have scored between 25 and 50, you should work toward increasing your score by following the guidelines we have provided in the Learning Center.</p>
+		
+	<p class='hidden x'>You have scored above 50, good job! You can still improve your habits with the guidelide provided on our learning center. </p>
+		
+	<p class='hidden x'>You have scored over 75, well done! Thank you for being sustainable, you can still benefit from our learning center, and continue the positive impact on the earth! Keep up the good work!</p>
+  </div>
+	</div>
+
+	
+
+	</form>
+
+
+
+
+
+	<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
